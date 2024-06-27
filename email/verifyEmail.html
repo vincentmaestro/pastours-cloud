@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify your email for pastours_ng</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #e0e0e0;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1% 0;
+            margin-bottom: 1%;
+        }
+
+        .main {
+            background-color: #eee;
+            width: 80%;
+            margin: 0 auto;
+            border-radius: 12px;
+            padding: 2% 0;
+        }
+
+        .main div p, small {
+            color: #444;
+        }
+
+        .main .verify_link {
+            display: block;
+            margin: 5% auto;
+            width: 25%;
+            text-align: center;
+            padding: 8px 0;
+            border-radius: 6px;
+            color: #fff;
+            background-color: #b69f19;
+        }
+
+        .main footer {
+            margin: 5% 0;
+            margin-left: 4%;
+        }
+
+        .main footer small {
+            font-size: 15px;
+        }
+
+        .main footer a {
+            font-size: 14px;
+        }
+
+        .main footer a:hover {
+            text-decoration: underline;
+        }
+
+        .address {
+            width: 80%;
+            margin: 2% auto;
+        }
+
+        @media screen and (max-width: 576px) {
+            .main {
+                width: 94%;
+            }
+
+            .main .verify_link {
+                width: 40%;
+            }
+
+            .address {
+                width: 92%;
+                margin: 2% auto;
+            }
+        }
+
+        @media screen and (max-width: 430px) {
+            .main .verify_link {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="data:image/png;base64,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" alt="pastours_logo" />
+    </nav>
+
+    <div class="main">
+        <h1 style="margin-left: 4%;">Hello { username }</h2>
+        
+        <p style="margin: 16px 0; margin-left: 4%">Thank you for signing up on Pastours.</p>
+        <p style="margin-left: 4%;">Follow the link below to verify your email address</p>
+            
+        <a class="verify_link" href="https://pastours.netlify.app/validate">Verify my email</a>
+
+        <p style="margin: 16px 0; margin-left: 4%">Note that this confirmation link is only valid for one hour</p>
+
+        <p style="margin: 16px 0; margin-left: 4%">Note that unverified email accounts are automatically deleted after 30 days</p>
+        <p style="margin-left: 4%;">If you did not inititate this process, kindly ignore this email</p>
+
+        <footer>
+            <small>Sincerely,</small>
+            <p style="margin-top: 20px;">Pastours team</p>
+            <a href="mailto:info@pastours.ng">info@pastours.ng</a>
+        </footer>
+    </div>
+
+    <div class="address">
+        <small style="display: block;">Abijo GRA, Lekki</small>
+        <small style="display: block;">10384 Lagos, Nigeria</small>
+    </div>
+</body>
+</html>

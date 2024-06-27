@@ -1,0 +1,5 @@
+{
+    "dbConnString": "connString",
+    "emailPrivateKey": "pastours_emailPrivateKey",
+    "authPrivateKey": "pastours_authPrivateKey"
+}
