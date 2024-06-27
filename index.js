@@ -9,7 +9,7 @@ app.listen(port);
 
 require('./start/logger');
 require('./start/routes')(app);
-require('./start/middlewares')(app);
+require('./start/headers')(app);
 require('./start/db')();
 
 

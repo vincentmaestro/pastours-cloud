@@ -1,5 +1,5 @@
 const express = require('express');
-const cors = require('cors');
+// const cors = require('cors');
 const beverages = require('../routes/beverages');
 const alcoholics = require('../routes/alcoholics');
 const diary = require('../routes/diaryEggsSpreads');
@@ -12,7 +12,7 @@ const errors = require('../middlewares/errors');
 
 module.exports = function(app) {
     app.use(express.json());
-    app.use(cors({ origin: '*' }));
+    // app.use(cors({ origin: '*' }));
 
     app.use('/api/users', users);
     app.use('/api/validate', verifyEmail);
