@@ -13,4 +13,4 @@ require('./start/headers')(app);
 require('./start/db')();
 
 
-if(!config.get('emailPrivateKey' || 'authPrivateKey')) throw new Error('STARTUP ERROR: jwt keys not defined');
+if(!config.get('emailPrivateKey' || 'authPrivateKey' || 'dbConnString')) throw new Error('STARTUP ERROR: jwt keys not defined');
