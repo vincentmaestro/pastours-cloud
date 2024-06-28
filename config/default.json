@@ -1,5 +1,5 @@
 {
-    "dbConnString": "mongodb://127.0.0.1/Pastours",
-    "emailPrivateKey": "dev_priv8_key",
-    "authPrivateKey": "dev_priv8_key"
+    "dbConnString": "",
+    "emailPrivateKey": "",
+    "authPrivateKey": ""
 }
