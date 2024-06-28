@@ -1,9 +1,7 @@
 const express = require('express');
 const config = require('config');
-const path = require('path');
 const logger = require('./start/logger');
 
-process.env['NODE_CONFIG_DIR'] = path.join(path.resolve("./"),"config/");
 const app = express();
 
 app.get("/", (req, res) => res.send("From Pastours' node server: \{^_^}/ hi!"));
