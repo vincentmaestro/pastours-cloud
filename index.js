@@ -1,10 +1,10 @@
 const express = require('express');
+const path = require("path");
 const config = require('config');
 const logger = require('./start/logger');
 
+process.env['NODE_CONFIG_DIR'] = path.join(path.resolve("./"),"config/");
 const app = express();
-
-app.get("/", (req, res) => res.send("From Pastours' node server: \{^_^}/ hi!"));
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => logger.info(`server running on port ${port}`));
