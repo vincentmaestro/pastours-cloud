@@ -1,9 +1,9 @@
-const express = require('express');
 const path = require("path");
+process.env['NODE_CONFIG_DIR'] = path.join(path.resolve("./"),"config/");
+const express = require('express');
 const config = require('config');
 const logger = require('./start/logger');
 
-process.env['NODE_CONFIG_DIR'] = path.join(path.resolve("./"),"config/");
 const app = express();
 
 const port = process.env.PORT || 3000;
