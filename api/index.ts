@@ -1,5 +1,5 @@
 const express = require('express');
-const logger = require('./start/logger');
+const logger = require('../start/logger');
 
 const app = express();
 
