@@ -1,6 +1,7 @@
+const path = require("path");
+process.env['NODE_CONFIG_DIR'] = path.join(path.resolve("./"),"config/");
 require('express-async-errors');
 require('winston-mongodb');
-process.env["NODE_CONFIG_DIR"] = "../config/";
 const config = require('config');
 const { createLogger, transports, format } = require('winston');
 const { prettyPrint, simple } = format;
