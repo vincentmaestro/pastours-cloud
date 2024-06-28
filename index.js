@@ -7,6 +7,9 @@ const app = express();
 const port = process.env.PORT || 3000;
 app.listen(port, () => logger.info(`server running on port ${port}`));
 
+// const path = require("path")
+// process.env['NODE_CONFIG_DIR'] = path.join(path.resolve("./"),"config/")
+
 
 require('./start/routes')(app);
 require('./start/headers')(app);
