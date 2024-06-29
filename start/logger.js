@@ -1,3 +1,4 @@
+process.env["NODE_CONFIG_DIR"] = __dirname + "../config/";
 require('express-async-errors');
 require('winston-mongodb');
 const config = require('config');
