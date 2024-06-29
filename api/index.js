@@ -7,7 +7,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 app.listen(port, () => logger.info(`server running on port ${port}`));
 
-app.get("/", (req, res) => res.send("From Pastours' node server: \{^_^}/ hi!"));
+app.get("/", (req, res) => res.send("From Pastours' node server: \\{^_^}/ hi!"));
 
 require('../start/routes')(app);
 require('../start/headers')(app);
