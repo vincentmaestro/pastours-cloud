@@ -6,6 +6,6 @@ const logger = require('./logger');
 
 module.exports = function() {
     const db = config.get('dbConnString');
-    mongoose.connect(db, { useUnifiedTopology: true })
+    mongoose.connect(db)
     .then(() => logger.info(`connected to ${db}`));
 }
