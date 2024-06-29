@@ -1,5 +1,5 @@
 {
-    "dbConnString": "",
-    "emailPrivateKey": "",
-    "authPrivateKey": ""
+    "dbConnString": "connString",
+    "emailPrivateKey": "emailPrivateKey",
+    "authPrivateKey": "authPrivateKey"
 }
